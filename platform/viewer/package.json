@@ -35,7 +35,12 @@
     "test:unit": "jest --watchAll",
     "test:unit:ci": "jest --ci --runInBand --collectCoverage",
     "prepublishOnly": "yarn run build:package",
-    "postpublish": "node -p -e \"require('./package.json').version\" > success_version.txt"
+    "postpublish": "node -p -e \"require('./package.json').version\" > success_version.txt",
+    "build-in": "cross-env NODE_ENV=production PUBLIC_URL=/ APP_CONFIG=eClarity/in.js QUICK_BUILD=true node --max_old_space_size=4096 ./../../node_modules/webpack/bin/webpack.js --config .webpack/webpack.pwa.js",
+    "build-test": "cross-env NODE_ENV=production PUBLIC_URL=/ APP_CONFIG=eClarity/test.js QUICK_BUILD=true node --max_old_space_size=4096 ./../../node_modules/webpack/bin/webpack.js --config .webpack/webpack.pwa.js",
+    "build-om": "cross-env NODE_ENV=production PUBLIC_URL=/ APP_CONFIG=eClarity/om.js QUICK_BUILD=true node --max_old_space_size=4096 ./../../node_modules/webpack/bin/webpack.js --config .webpack/webpack.pwa.js",
+    "build-ruwi": "cross-env NODE_ENV=production PUBLIC_URL=/ APP_CONFIG=eClarity/ruwi.js QUICK_BUILD=true node --max_old_space_size=4096 ./../../node_modules/webpack/bin/webpack.js --config .webpack/webpack.pwa.js",
+    "build-vina": "todo"
   },
   "files": [
     "dist",
