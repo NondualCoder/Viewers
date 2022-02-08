@@ -39,7 +39,12 @@
     "lerna:restore": "./netlify-lerna-restore.sh",
     "lerna:version": "npx lerna version prerelease --force-publish",
     "lerna:publish": "lerna publish from-package --canary --dist-tag canary",
-    "link-list": "npm ls --depth=0 --link=true"
+    "link-list": "npm ls --depth=0 --link=true",
+    "build-in": "lerna run build-in --stream",
+    "build-test": "lerna run build-test --stream",
+    "build-om": "lerna run build-om --stream",
+    "build-ruwi": "lerna run build-ruwi --stream",
+    "build-vina": "lerna run build-vina --stream"
   },
   "dependencies": {
     "@babel/runtime": "^7.5.5",
