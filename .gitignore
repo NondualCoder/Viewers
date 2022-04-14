@@ -38,6 +38,3 @@ screenshots/
 
 # Locize settings
 .locize
-
-/nbproject/private
-platform/viewer/public/eClarity
