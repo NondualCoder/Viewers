@@ -19,9 +19,9 @@ window.config = {
     dicomWeb: [
       {
         name: 'DCM4CHEE',
-        wadoUriRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/wado',
-        qidoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
-        wadoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
+        wadoUriRoot: 'https://om-dcm.eclarityhealth.com/dcm4chee-arc/aets/OMANPACS/wado',
+        qidoRoot: 'https://om-dcm.eclarityhealth.com/dcm4chee-arc/aets/OMANPACS/rs',
+        wadoRoot: 'https://om-dcm.eclarityhealth.com/dcm4chee-arc/aets/OMANPACS/rs',
         qidoSupportsIncludeField: true,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',

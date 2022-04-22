@@ -7,7 +7,7 @@ window.config = {
   disableServersCache: false,
   studyPrefetcher: {
     enabled: true,
-    order: 'closest',
+    order: 'all',
     displaySetCount: 3,
     preventCache: false,
     prefetchDisplaySetsTimeout: 300,
@@ -19,9 +19,9 @@ window.config = {
     dicomWeb: [
       {
         name: 'DCM4CHEE',
-        wadoUriRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/wado',
-        qidoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
-        wadoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
+        wadoUriRoot: 'https://test-dcm.eclarityhealth.com/dcm4chee-arc/aets/DCM4CHEE/wado',
+        qidoRoot: 'https://test-dcm.eclarityhealth.com/dcm4chee-arc/aets/DCM4CHEE/rs',
+        wadoRoot: 'https://test-dcm.eclarityhealth.com/dcm4chee-arc/aets/DCM4CHEE/rs',
         qidoSupportsIncludeField: true,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',

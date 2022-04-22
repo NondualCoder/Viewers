@@ -19,9 +19,9 @@ window.config = {
     dicomWeb: [
       {
         name: 'DCM4CHEE',
-        wadoUriRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/wado',
-        qidoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
-        wadoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
+        wadoUriRoot: 'http://172.16.25.92:8082/dcm4chee-arc/aets/BASRUWIPACS/wado',
+        qidoRoot: 'http://172.16.25.92:8082/dcm4chee-arc/aets/BASRUWIPACS/rs',
+        wadoRoot: 'http://172.16.25.92:8082/dcm4chee-arc/aets/BASRUWIPACS/rs',
         qidoSupportsIncludeField: true,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',
